@@ -1,7 +1,6 @@
 body {
     background-color: hsl(218, 23%, 16%);
     min-height: 100vh;
-    min-width: 100vh;
     align-items: center;
     justify-content: center;
 }
@@ -79,13 +78,43 @@ p {
     top: 35px;
 }
 
+.attribution {
+    position: absolute; 
+    bottom: 0px; left: 50vh; right: 50vh; color: hsl(217, 19%, 38%);
+}
+
 @media (max-width: 1439px){
     .main-box {
-        height: 500px;
-        width: 350px;
+        height: 350px;
+        width: 330px;
         padding-left: 10px;
         padding-right: 10px;
         background-color:  hsl(217, 19%, 24%);
         border-radius: 15px;
+    }
+
+    #id-p {
+        bottom: 50px;
+    }
+
+    #advice-p{
+        bottom: 70px;
+    }
+
+    #divider {
+        top: 60px;
+        width: 300px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-box {
+        top: 80px;
+    }
+
+    .attribution {
+        left: 0;
+        right: 0;
     }
 }
