@@ -1,0 +1,91 @@
+body {
+    background-color: hsl(218, 23%, 16%);
+    min-height: 100vh;
+    min-width: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+body > * {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 2px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+.main-box {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:  hsl(217, 19%, 24%);
+    border-radius: 15px;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 55px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: hsl(150, 100%, 66%);
+}
+
+.button-box:hover {
+    box-shadow: 0 0 30px 5px hsl(150, 100%, 66%);
+    cursor: pointer;
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
+}
+
+p {
+    text-align: center;
+}
+
+#id-p {
+    text-transform: uppercase;
+    color: hsl(150, 100%, 66%);
+    font-weight: 600;
+    position: relative;
+    bottom: 10px;
+    font-size: 12px;
+}
+
+#advice-p {
+    color: hsl(193, 38%, 86%);
+    font-size: 26px;
+    height: 80px;
+    font-weight: 800;
+    position: relative;
+    bottom: 20px;
+}
+
+#divider {
+    position: relative;
+    top: 35px;
+}
+
+@media (max-width: 1439px){
+    .main-box {
+        height: 500px;
+        width: 350px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color:  hsl(217, 19%, 24%);
+        border-radius: 15px;
+    }
+}

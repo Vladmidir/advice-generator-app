@@ -1,6 +1,14 @@
-function myFunc(){
-    fetch("https://api.adviceslip.com/advice", {method: 'GET', headers: {'Accept': 'application/json'} })
+function giveAdvice(){
+    slip = fetch("https://api.adviceslip.com/advice")
     .then(response => response.json()
-        .then(value => console.log("Advice #" + value['slip']['id'] + " is " + value['slip']['advice'])));
+    .then(value => {
+        document.getElementById("advice-id").innerText = value['slip']['id'];
+        document.getElementById("advice-text").innerText = value['slip']['advice'];
+    }));
         
 }
+
+
+window.addEventListener('load', load =>{
+    giveAdvice();
+});
